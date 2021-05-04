@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #262626;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.object-wrapper {
+    background-color: #253b74;
+    padding: 10px;
+    margin: .5em;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
