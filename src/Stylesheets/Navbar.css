@@ -6,6 +6,7 @@
     color: white;
     list-style-type: none;
     min-width: 300px;
+    justify-content: left;
 }
 
 .nav-bar-button {
