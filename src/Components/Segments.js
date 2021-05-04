@@ -17,7 +17,12 @@ class Segments extends React.Component {
     }
 
     onDragEnter = (e) => {
-        document.getElementById("tag-config").style.backgroundColor = "blue"
+        document.getElementById("tag-config").style.backgroundColor = "grey"
+        console.log(e.target)
+    }
+
+    onDragEnd = (e) => {
+        document.getElementById("tag-config").style.backgroundColor = null
         console.log(e.target)
     }
 
@@ -31,7 +36,8 @@ class Segments extends React.Component {
                         {this.renderDownloadSegments()}
                     </div>
                     <div div className="column-wrapper" id="tag-config"
-                         onDragEnter={this.onDragEnter}>
+                         onDragEnter={this.onDragEnter}
+                         onDragLeave={this.onDragEnd}>
                         <h3>Tag Config</h3>
                         {this.renderTagSegments()}
                     </div>

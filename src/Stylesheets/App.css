@@ -38,6 +38,7 @@ a, a:visited, a:hover, a:active {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
+    user-select: none;
 }
 
 .column-wrapper {
